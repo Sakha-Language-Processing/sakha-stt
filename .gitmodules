@@ -1,0 +1,9 @@
+[submodule "fairseq"]
+	path = fairseq
+	url = https://github.com/pytorch/fairseq
+[submodule "rVADfast"]
+	path = rVADfast
+	url = https://github.com/zhenghuatan/rVADfast
+[submodule "kenlm"]
+	path = kenlm
+	url = https://github.com/kpu/kenlm

@@ -1,2 +1,13 @@
-*.pyc
+# Virtual environment
 venv/
+
+# Mozilla Common Voice dataset
+cv-corpus-*/
+cv-corpus-*-sah.tar.gz
+
+# Voice Activity Detection
+*.vads
+
+# Voice data
+with_silence
+without_silence

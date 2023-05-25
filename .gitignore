@@ -1,6 +1,9 @@
 # Virtual environment
 venv/
 
+# Bytecode
+*.pyc
+
 # Mozilla Common Voice dataset
 cv-corpus-*/
 cv-corpus-*-sah.tar.gz

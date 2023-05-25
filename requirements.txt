@@ -1,3 +1,11 @@
-soundfile
+# For development
+black
+flake8
+isort
+
+# For work
 scipy
+soundfile
+torch
+torchaudio
 tqdm

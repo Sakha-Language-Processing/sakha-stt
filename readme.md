@@ -19,7 +19,7 @@ curl -O 'https://dl.fbaipublicfiles.com/mms/asr/mms1b_l1107.pt'
 1. Скачиваем словарь для якутского языка:
 
 ```shell
-curl -O 'https://dl.fbaipublicfiles.com/mms/asr/dict/mms1b_fl102/sah.txt'
+curl -O 'https://dl.fbaipublicfiles.com/mms/asr/dict/mms1b_l1107/sah.txt'
 ```
 
 1. Пробное распознавание речи в текст:
@@ -36,5 +36,5 @@ python fairseq/examples/mms/asr/infer/mms_infer.py \
 ## Ссылки
 
 * [Веса для STT для 1107 языков](https://dl.fbaipublicfiles.com/mms/asr/mms1b_l1107.pt)
-* [Словарь для якутского языка](https://dl.fbaipublicfiles.com/mms/asr/dict/mms1b_fl102/sah.txt)
+* [Словарь для якутского языка](https://dl.fbaipublicfiles.com/mms/asr/dict/mms1b_l1107/sah.txt)
 * [Веса для TTS для якутского языка](https://dl.fbaipublicfiles.com/mms/tts/sah.tar.gz)

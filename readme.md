@@ -10,28 +10,31 @@
 
 ## Подход
 
-1. Скачиваем веса для STT для 1107 языков (13.1 Gb):
+- [x] Скачиваем веса для STT для 1107 языков (13.1 Gb):
 
-```shell
-curl -O 'https://dl.fbaipublicfiles.com/mms/asr/mms1b_l1107.pt'
-```
+    ```shell
+    curl -O 'https://dl.fbaipublicfiles.com/mms/asr/mms1b_l1107.pt'
+    ```
 
-1. Скачиваем словарь для якутского языка:
+- [x] Скачиваем словарь для якутского языка:
 
-```shell
-curl -O 'https://dl.fbaipublicfiles.com/mms/asr/dict/mms1b_l1107/sah.txt'
-```
+    ```shell
+    curl -O 'https://dl.fbaipublicfiles.com/mms/asr/dict/mms1b_l1107/sah.txt'
+    ```
 
-1. Пробное распознавание речи в текст:
+- [ ] Пробное распознавание речи в текст:
 
-```shell
-python fairseq/examples/mms/asr/infer/mms_infer.py \
-    --model "/path/to/asr/model" \
-    --lang lang_code \
-    --audio "/path/to/audio_1.wav" "/path/to/audio_2.wav" "/path/to/audio_3.wav"
-```
+    ```shell
+    cd fairseq
+    python ./examples/mms/asr/infer/mms_infer.py \
+        --model "../mms1b_l1107.pt" --lang sah \
+        --audio "../audio_1.wav" "../audio_2.wav" "../audio_3.wav"
+    cd ..
+    ```
 
-1. Создаем прототип REST API
+    На данный момент скрипт из примера не работает.
+
+- [ ] Создаем прототип REST API
 
 ## Ссылки
 

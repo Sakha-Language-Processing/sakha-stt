@@ -1,1 +1,7 @@
 flask-restx
+
+editdistance
+hydra-core
+omegaconf
+soundfile
+torch

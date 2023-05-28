@@ -4,13 +4,10 @@
 
 ## Технологии
 
-* [Coqui.ai STT](https://stt.readthedocs.io/)
-* [Mozilla CommonVoice Dataset](https://commonvoice.mozilla.org/sah/)
-* [Flask](https://flask.palletsprojects.com/)
+* [The Massively Multilingual Speech (MMS) by Facebook Research](https://github.com/facebookresearch/fairseq/tree/main/examples/mms)
+* [Flask-RestX](https://flask-restx.readthedocs.io/)
 
 ## Подход
 
-1. Убираем записи спикеров с низким качеством и разделяем мужские и женские голоса.
-2. Обучаем модели для мужских и женских голосов согласно [Playbook](https://stt.readthedocs.io/en/latest/playbook/TRAINING.html).
-3. Собираем корпус текстов и компилируем языковую модель согласно [Playbook](https://stt.readthedocs.io/en/latest/playbook/SCORER.html).
-4. Создаем образ контейнеров Docker для Flask API.
+1. Скачиваем веса для якутского языка
+2. Создаем прототип REST API
